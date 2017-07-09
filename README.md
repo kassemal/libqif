@@ -65,7 +65,7 @@ To compile / install:
     mkdir <path>/build && cd <path>/build
     cmake ..
     make
-    sudo make isntall
+    sudo make install
 
 To run the tests
 

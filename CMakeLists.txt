@@ -42,7 +42,7 @@ add_subdirectory(misc/doxygen EXCLUDE_FROM_ALL)							# build doc
 add_custom_target(allcode)												# 'all' builds just the library, 'allcode' builds also tests and samples
 add_dependencies(allcode samples)
 
-# tests only external/googletest is checked out
+# tests, only if external/googletest is checked out
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/external/googletest/CMakeLists.txt")
 	add_subdirectory(tests EXCLUDE_FROM_ALL)							# build tests
 	add_dependencies(allcode tests)
